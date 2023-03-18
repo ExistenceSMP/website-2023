@@ -6,7 +6,7 @@
 
 	--primary: #22640e;
 
-	--page-width: 55em;
+	--page-width: 80em;
 }
 
 *,
@@ -247,13 +247,13 @@ p {
 }
 
 .slider-list {
-	width: min(calc(var(--page-width) + 1em), 100vw);
-	height: calc(((min(calc(var(--page-width) + 1em), 100vw) / 16) * 9));
+	width: min(calc(var(--page-width) + 1em - 32em), 100vw);
+	height: calc(((min(calc(var(--page-width) + 1em - 32em), 100vw) / 16) * 9));
 	position: relative;
 }
 .slide {
-	width: min(calc(var(--page-width) + 1em), 100vw);
-	height: calc(((min(calc(var(--page-width) + 1em), 100vw) / 16) * 9));
+	width: min(calc(var(--page-width) + 1em - 32em), 100vw);
+	height: calc(((min(calc(var(--page-width) + 1em - 32em), 100vw) / 16) * 9));
 	position: relative;
 	img {
 		object-fit: cover;

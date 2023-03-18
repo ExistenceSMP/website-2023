@@ -8,9 +8,7 @@ export default function SocialMedia() {
 		<div
 			style={{
 				display: 'flex',
-				width: 'min(calc((var(--page-width) + 1em) * 0.5), calc(100vw - 3em))',
-				margin: 'auto',
-				marginTop: '1em',
+				width: '31em',
 				justifyContent: 'start',
 				gap: '1em 1em',
 				flexWrap: 'wrap',
