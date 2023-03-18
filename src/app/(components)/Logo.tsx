@@ -9,14 +9,25 @@ export default function Logo() {
 			}}
 		>
 			<img src="logos/cs2.svg" height="64px" />
-			<h1
+			<div
 				style={{
-					marginLeft: '0.5em',
-					whiteSpace: 'nowrap',
+					display: 'flex',
+					alignItems: 'center',
+					padding: '0.2em 0.45em',
+					paddingBottom: '0.3em',
+					backgroundColor: 'var(--primary)',
+					marginLeft: '1em',
+					borderRadius: '0.5em',
 				}}
 			>
-				Existence SMP
-			</h1>
+				<h1
+					style={{
+						whiteSpace: 'nowrap',
+					}}
+				>
+					Existence SMP
+				</h1>
+			</div>
 		</div>
 	);
 }

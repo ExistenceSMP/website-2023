@@ -122,7 +122,7 @@ a {
 	border-bottom: 2px solid white;
 
 	a {
-		font-size: 20px;
+		font-size: 1.25rem;
 		font-weight: 600;
 		transition: filter 0.1s ease-in-out;
 	}
@@ -160,7 +160,7 @@ main {
 
 	border-radius: 0.5em;
 
-	line-height: 1.75em;
+	line-height: 1.6em;
 
 	a {
 		display: inline-block;
@@ -178,7 +178,7 @@ main {
 	}
 
 	p {
-		font-size: 20px;
+		font-size: 1.125rem;
 	}
 
 	h1,
@@ -209,7 +209,7 @@ main {
 
 	h2 {
 		color: var(--fg);
-		font-size: 28px;
+		font-size: 1.5rem;
 
 		display: flex;
 		white-space: nowrap;
@@ -230,17 +230,12 @@ main {
 
 .logo h1 {
 	color: var(--bg);
-	background-color: var(--primary);
-	padding-left: 0.25em;
-	padding-right: 0.25em;
-	padding-top: calc(0.125em - 6px);
-	padding-bottom: 0.125em;
 	border-radius: 0.25em;
-	font-size: 28px;
+	font-size: 1.5rem;
 }
 
 p {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .slider-list {
