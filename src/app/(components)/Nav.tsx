@@ -11,8 +11,8 @@ export default function Nav() {
 				<Logo />
 			</Link>
 			<ul>
+				<NavLink name="About" path="/" />
 				<NavLink name="News" path="/news" />
-				<NavLink name="About" path="/about" />
 				<NavLink name="Community" path="/community" />
 				<NavLink name="Podcast" path="/podcast" />
 				<NavLink name="Archive" path="/archive" />
