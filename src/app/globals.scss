@@ -166,9 +166,11 @@ main {
 		display: inline-block;
 		box-sizing: border-box;
 		text-indent: 0;
+		font-weight: 600;
 
 		transition: text-decoration-color 0.1s ease-in-out;
 		text-decoration: underline;
+		text-decoration-thickness: 2px;
 		text-decoration-color: var(--bg);
 
 		&:hover {
@@ -226,6 +228,12 @@ main {
 	strong {
 		font-weight: 600;
 	}
+
+	ul {
+		margin-left: 1.5em;
+		font-size: 1.125rem;
+		line-height: 1.6em;
+	}
 }
 
 .logo h1 {
@@ -261,5 +269,19 @@ p {
 	margin: auto;
 	iframe {
 		border-radius: 0.5em;
+	}
+}
+
+.footerLink {
+	font-weight: 600;
+	&:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+	}
+	&.igalaxy {
+		color: #ab48ab;
+	}
+	&.jip {
+		color: rgb(29, 153, 97);
 	}
 }
