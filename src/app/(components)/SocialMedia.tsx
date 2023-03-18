@@ -8,7 +8,7 @@ export default function SocialMedia() {
 		<div
 			style={{
 				display: 'flex',
-				width: 'min(calc((var(--page-width) + 1em) * 0.75), calc(100vw - 3em))',
+				width: 'min(calc((var(--page-width) + 1em) * 0.5), calc(100vw - 3em))',
 				margin: 'auto',
 				marginTop: '1em',
 				justifyContent: 'start',
@@ -53,7 +53,7 @@ function SocialMediaIcon({ color, Icon, path }: Props) {
 				backgroundColor: color,
 				flexGrow: 1,
 				aspectRatio: '1 / 1',
-				borderRadius: '1em',
+				borderRadius: '0.5em',
 				padding: '1em',
 				color: 'var(--bg)',
 				display: 'flex',
@@ -67,7 +67,7 @@ function SocialMediaIcon({ color, Icon, path }: Props) {
 				}, 50)
 			}
 		>
-			<Icon style={{ width: '4em', height: '4em' }} />
+			<Icon style={{ width: '3em', height: '3em' }} />
 		</div>
 	);
 }
