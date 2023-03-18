@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Carousel from 'nuka-carousel';
 import { easeExpOut } from 'd3-ease';
+import dayjs from 'dayjs';
 
 export default function ScreenshotCarousel() {
 	return (
@@ -48,7 +49,9 @@ export default function ScreenshotCarousel() {
 					alt={'Project Amplified'}
 				/>
 				<Image
-					src="https://existence-smp-discord-bot.hop.sh/latest"
+					src={`https://existence-smp-discord-bot.hop.sh/latest?${dayjs().format(
+						'DD-MM-YYYY'
+					)}`} // force cache refresh
 					fill={true}
 					alt={'Community Server 2'}
 				/>
