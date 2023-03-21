@@ -1,36 +1,41 @@
+import MediaSection from './(components)/MediaSection';
+import MainEmbed from './(components)/MainEmbed';
+
 import ScreenshotCarousel from './(components)/ScreenshotCarousel';
 import SocialMedia from './(components)/SocialMedia';
 import YouTubePlaylist from './(components)/YouTubePlaylist';
 import YouTubeVideo from './(components)/YouTubeVideo';
-import MainEmbed from './(components)/MainEmbed';
 
-<div style={{display: 'flex', width: 'calc(var(--page-width) + 1em)', marginLeft: 'auto', marginRight: 'auto', gap: '0 1em'}}>
-    <ScreenshotCarousel />
-    <div style={{display: 'flex', flexDirection: 'column', gap: '1em 0', justifyContent: 'space-between'}}>
+<MediaSection media={<ScreenshotCarousel />}>
+    <div style={{display: 'flex', flexDirection: 'column', gap: '1em 0', justifyContent: 'space-between', height: '100%'}}>
         <main style={{margin: 0, marginTop: '1em', flexGrow: '2'}}>
             ## About Us
 
             Welcome to the **Existence SMP Community**! We're an online Minecraft community established March 20th, 2016. \
             \
-            Over the past 7 years we've had three YouTube-based series and three smaller "Project" series. We're now on our second Community Server, focusing on building a more open Minecraft community.
+            Originally a content-creation-focused Minecraft SMP, we're now on our second Community Server, focusing on building a more open Minecraft community.
 
         </main>
         <SocialMedia />
     </div>
 
-</div>
-<main>
-## Community Server 2 _(2022—Present)_
+</MediaSection>
 
-Our flagship SMP server, Community Server 2, launched on March 20th, 2022, following the release of Minecraft 1.18. \
-It is a whitelisted SMP for Patrons and Trusted members of the Existence SMP Community. \
-\
-Check out the trailer below, or visit the [Community](/community) page for more info!
+<MediaSection media={<YouTubeVideo id="nuOSlzNgzx4" />} reverse>
+    <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+        <main style={{margin: 0, marginTop: '1em', flexGrow: '1'}}>
+            ## Community Server 2 _(2022—Present)_
 
-</main>
-<MainEmbed>
-    <YouTubeVideo id="nuOSlzNgzx4" />
-</MainEmbed>
+            Our flagship SMP server, Community Server 2, launched on March 20th, 2022, following the release of Minecraft 1.18. \
+            It is a whitelisted SMP for Patrons and Trusted members of the Existence SMP Community. \
+            \
+            Check out the trailer or visit the [Community](/community) page for more info!
+
+        </main>
+    </div>
+
+</MediaSection>
+
 <main>
 ## Legacy Seasons _(2016—2018)_
 

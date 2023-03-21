@@ -9,16 +9,14 @@ export default function ScreenshotCarousel() {
 	return (
 		<div
 			style={{
-				width: 'calc(var(--page-width) + 1em - 32em )',
-				height: 'calc((var(--page-width) + 1em - 32em ) / 16 ) * 9)',
-				marginTop: '1em',
 				position: 'relative',
+				marginTop: '1em',
 			}}
 		>
 			<Carousel
 				style={{
-					width: 'min(calc(var(--page-width) + 1em - 32em), 100vw)',
-					height: 'calc((var(--page-width) + 1em - 32em) / 16 ) * 9)',
+					width: 'calc((var(--page-width) / 5) * 3)',
+					aspectRatio: '16 / 9',
 				}}
 				autoplay
 				autoplayInterval={7500}

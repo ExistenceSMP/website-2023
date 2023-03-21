@@ -85,12 +85,6 @@ nav {
 	.slider-frame {
 		border-radius: 0 !important;
 	}
-
-	.mainEmbed {
-		iframe {
-			border-radius: 0 !important;
-		}
-	}
 }
 
 @media (max-width: 600px) {
@@ -262,14 +256,6 @@ p {
 }
 .slider-frame {
 	border-radius: 0.5em;
-}
-
-.mainEmbed {
-	width: calc(var(--page-width) + 1em);
-	margin: auto;
-	iframe {
-		border-radius: 0.5em;
-	}
 }
 
 .footerLink {

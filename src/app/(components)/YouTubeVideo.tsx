@@ -14,8 +14,9 @@ export default function YouTubeVideo({ id, style }: Props) {
 			allowFullScreen
 			style={{
 				aspectRatio: '16 / 9',
+				width: '100%',
 				marginTop: '1em',
-				width: 'min(100%, 100vw)',
+				borderRadius: '0.5em',
 				...style,
 			}}
 		/>
