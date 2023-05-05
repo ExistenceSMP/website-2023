@@ -9,10 +9,12 @@ export default function Footer() {
 			style={{
 				maxWidth: 'var(--page-width)',
 				display: 'flex',
-				margin: 'auto',
+				marginLeft: 'auto',
+				marginRight: 'auto',
+				marginBottom: '1.75em',
 				justifyContent: 'center',
 				paddingTop: '1.5em',
-				paddingBottom: '2em',
+				position: 'relative',
 			}}
 		>
 			<p

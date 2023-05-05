@@ -75,7 +75,6 @@ export default function RootLayout({
 						style={{
 							width: '100%',
 							height: '100%',
-							backdropFilter: 'blur(2px)',
 						}}
 					>
 						<Nav />
