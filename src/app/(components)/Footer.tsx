@@ -30,7 +30,7 @@ export default function Footer() {
 				</strong>
 				<br />
 				<br />
-				<p
+				<span
 					style={{
 						fontSize: '14px',
 					}}
@@ -69,7 +69,7 @@ export default function Footer() {
 							Jip Fr
 						</Link>
 					</strong>
-				</p>
+				</span>
 			</p>
 		</div>
 	);

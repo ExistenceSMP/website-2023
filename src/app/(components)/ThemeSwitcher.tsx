@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
-import { FiSun, FiMoon } from 'react-icons/fi';
+import { FiSun, FiMoon, FiLoader } from 'react-icons/fi';
 
 export default function ThemeSwitcher() {
 	const [mounted, setMounted] = useState(false);
@@ -13,7 +13,17 @@ export default function ThemeSwitcher() {
 		setMounted(true);
 	}, []);
 
-	if (!mounted) return null;
+	if (!mounted)
+		return (
+			<FiLoader
+				style={{
+					width: '26.875px',
+					height: '26.875px',
+					marginBottom: '-5.375px',
+					marginLeft: '5.375px',
+				}}
+			/>
+		);
 
 	function toggleTheme() {
 		if (theme == 'light') {
