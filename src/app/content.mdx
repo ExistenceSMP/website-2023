@@ -6,14 +6,12 @@ import SocialMedia from './(components)/SocialMedia';
 import YouTubePlaylist from './(components)/YouTubePlaylist';
 import YouTubeVideo from './(components)/YouTubeVideo';
 
-<MediaSection media={<ScreenshotCarousel />}>
+<MediaSection media={<ScreenshotCarousel />} style={{marginTop: 0}}>
     <div style={{display: 'flex', flexDirection: 'column', gap: '1em 0', justifyContent: 'space-between', height: '100%'}}>
         <main style={{margin: 0, marginTop: '1em', flexGrow: '2'}}>
             ## About Us
 
-            Welcome to the **Existence SMP Community**! We're an online Minecraft community established March 20th, 2016. \
-            \
-            Originally a content-creation-focused Minecraft SMP, we're now on our second Community Server, focusing on building a more open Minecraft community.
+            Welcome to the **Existence SMP Community**! We're an online Minecraft community established March 20th, 2016.
 
         </main>
         <SocialMedia />
@@ -21,44 +19,39 @@ import YouTubeVideo from './(components)/YouTubeVideo';
 
 </MediaSection>
 
-<MediaSection media={<YouTubeVideo id="nuOSlzNgzx4" />} reverse>
-    <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-        <main style={{margin: 0, marginTop: '1em', flexGrow: '1'}}>
-            ## Community Server 2 _(2022—Present)_
+<MediaSection media={<YouTubeVideo id="mGpEINUBZN8" />} reverse style={{marginTop: '2em'}}>
+    <div style={{display: 'flex', flexDirection: 'column', height: '100%', flexGrow: 1}}>
+        <main style={{margin: 0, flexGrow: '1'}}>
+            ## Community Server 2
+            ## _(2022—Present)_
 
-            Our flagship SMP server, Community Server 2, launched on March 20th, 2022, following the release of Minecraft 1.18. \
-            It is a whitelisted SMP for Patrons and Trusted members of the Existence SMP Community. \
-            \
-            Check out the trailer or visit the [Community](/community) page for more info!
-
+            Our flagship SMP server, launched on March 20th, 2022, following the release of Minecraft 1.18. \
+            It is a whitelisted SMP for Patrons and Trusted members of the Existence SMP Community.
         </main>
     </div>
 
 </MediaSection>
 
-<main>
-## Legacy Seasons _(2016—2018)_
+<MediaSection media={<YouTubePlaylist id="PLSFAhfRdE2oPj8DbOOJNOCHMx9JF6M9l3" />}>
+    <div style={{display: 'flex', flexDirection: 'column', height: '100%', flexGrow: 1}}>
+        <main style={{margin: 0, flexGrow: '1'}}>
+            ## Podcast
+            ## _(2017-Present)_
 
-In March of 2016, we launched what is now known as Existence SMP Legacy Season 1. LS1 would lead to two other "Legacy" seasons before we switched to the community focus that we have today. \
-\
-The Legacy seasons were focused primarily on YouTube content creation. Visit our [YouTube channel](https://youtube.com/ExistenceSMP/playlists) to view the playlists that were created for these seasons! \
-\
-These seasons will always be a key part of Existence SMP history. Without them, we wouldn't have built the community that powers today's [Community Server](/community)!
+            The Existence Podcast began with Legacy Season 2, keeping community members up to date with current happenings, behind the scenes, the latest Minecraft news, and more.
+        </main>
+    </div>
 
-</main>
-<MainEmbed>
-    <YouTubePlaylist id="PLSFAhfRdE2oMIky9dSgsGmQmtFoyTkEmp" />
-</MainEmbed>
-<main>
-## Existence Podcast _(2017—Present)_
+</MediaSection>
 
-The Existence Podcast began with Legacy Season 2. We try to release monthly episodes hosted by Existence SMP Community members and a range of guests. \
-\
-We use the podcast to keep community members up to date with current happenings, behind the scenes, the latest Minecraft news, and more. It is a casual podcast to listen to while sitting back, relaxing, getting some work done, or playing a bit of Minecraft. \
-\
-Check the latest episodes on the [Podcast](/podcast) page or the YouTube playlist below.
+<MediaSection media={<YouTubePlaylist id="PLSFAhfRdE2oMIky9dSgsGmQmtFoyTkEmp" />} reverse>
+    <div style={{display: 'flex', flexDirection: 'column', height: '100%', flexGrow: 1}}>
+        <main style={{margin: 0, flexGrow: '1'}}>
+            ## Legacy Seasons
+            ## _(2016—2020)_
 
-</main>
-<MainEmbed>
-    <YouTubePlaylist id="PLSFAhfRdE2oPj8DbOOJNOCHMx9JF6M9l3" />
-</MainEmbed>
+            Before the launch of Community Server 1, the Existence SMP Community was focused primarily on YouTube content creation through what are now referred to as the Legacy Seasons.
+        </main>
+    </div>
+
+</MediaSection>

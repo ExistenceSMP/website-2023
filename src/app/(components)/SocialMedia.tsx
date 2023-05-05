@@ -52,7 +52,7 @@ function SocialMediaIcon({ color, Icon, path }: Props) {
 				aspectRatio: '1 / 1',
 				borderRadius: '0.5em',
 				padding: '1em',
-				color: 'var(--bg)',
+				color: '#fff',
 				display: 'flex',
 				justifyContent: 'center',
 				alignItems: 'center',
@@ -64,7 +64,7 @@ function SocialMediaIcon({ color, Icon, path }: Props) {
 				}, 50)
 			}
 		>
-			<Icon style={{ width: '3em', height: '3em' }} />
+			<Icon style={{ width: '2em', height: '2em' }} />
 		</div>
 	);
 }

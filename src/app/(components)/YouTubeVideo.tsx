@@ -8,14 +8,13 @@ interface Props {
 export default function YouTubeVideo({ id, style }: Props) {
 	return (
 		<iframe
-			src={`https://www.youtube.com/embed/${id}`}
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			src={`https://www.youtube-nocookie.com/embed/${id}`}
+			allow="encrypted-media;"
 			frameBorder={0}
 			allowFullScreen
 			style={{
-				aspectRatio: '16 / 9',
-				width: '100%',
-				marginTop: '1em',
+				width: 'calc((var(--page-width) / 5) * 3)',
+				height: 'calc(((var(--page-width) / 5) * 3)*(9/16))',
 				borderRadius: '0.5em',
 				...style,
 			}}

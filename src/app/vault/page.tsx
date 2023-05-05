@@ -1,6 +1,6 @@
 import Content from './content.mdx';
 
-export default function Archive() {
+export default function Vault() {
 	return (
 		<main>
 			<Content />

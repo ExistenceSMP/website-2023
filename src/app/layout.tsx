@@ -2,6 +2,7 @@ import Footer from './(components)/Footer';
 import Nav from './(components)/Nav';
 
 import './globals.scss';
+import { Providers } from './providers';
 
 export const metadata = {
 	title: 'Existence SMP',
@@ -69,13 +70,19 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<div
-					style={{ width: '100%', height: '100%', backdropFilter: 'blur(2px)' }}
-				>
-					<Nav />
-					{children}
-					<Footer />
-				</div>
+				<Providers>
+					<div
+						style={{
+							width: '100%',
+							height: '100%',
+							backdropFilter: 'blur(2px)',
+						}}
+					>
+						<Nav />
+						{children}
+						<Footer />
+					</div>
+				</Providers>
 			</body>
 		</html>
 	);

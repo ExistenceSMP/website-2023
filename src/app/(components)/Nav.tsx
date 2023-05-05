@@ -15,7 +15,7 @@ export default function Nav() {
 				<NavLink name="News" path="/news" />
 				<NavLink name="Community" path="/community" />
 				<NavLink name="Podcast" path="/podcast" />
-				<NavLink name="Archive" path="/archive" />
+				<NavLink name="Vault" path="/vault" />
 			</ul>
 		</nav>
 	);

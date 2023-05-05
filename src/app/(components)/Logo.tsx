@@ -24,6 +24,7 @@ export default function Logo() {
 					style={{
 						whiteSpace: 'nowrap',
 					}}
+					className={'logo-text'}
 				>
 					Existence SMP
 				</h1>

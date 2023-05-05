@@ -1,6 +1,8 @@
 import dayjs from 'dayjs';
 import Link from 'next/link';
 
+import ThemeSwitcher from './ThemeSwitcher';
+
 export default function Footer() {
 	return (
 		<div
@@ -41,6 +43,7 @@ export default function Footer() {
 					© {dayjs().year()} Existence SMP
 				</strong>
 			</p>
+			<ThemeSwitcher />
 		</div>
 	);
 }
