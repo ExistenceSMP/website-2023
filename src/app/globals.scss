@@ -114,6 +114,39 @@ a {
 	text-decoration: none;
 }
 
+.sidebarLink {
+	background-color: transparent;
+	border-radius: 0.5em;
+
+	a {
+		font-size: 1.125rem;
+		font-weight: 600;
+		width: calc(100% - 28px);
+		border-radius: 8px;
+		display: block;
+		padding: 0.25em 7px;
+		padding-right: 21px;
+	}
+
+	&:hover,
+	&.active {
+		background-color: var(--primary);
+	}
+
+	&:hover {
+		&:not(.active) {
+			a {
+				backdrop-filter: brightness(50%);
+			}
+		}
+		&.active {
+			a {
+				backdrop-filter: brightness(75%);
+			}
+		}
+	}
+}
+
 .navLink {
 	margin-left: 2em;
 
