@@ -23,34 +23,27 @@ export default function ThemeSwitcher() {
 		}
 	}
 
-	return (
-		<div
+	return theme == 'light' ? (
+		<FiSun
 			style={{
-				position: 'absolute',
-				marginLeft: '360px',
+				width: '26.875px',
+				height: '26.875px',
+				marginBottom: '-5.375px',
+				marginLeft: '5.375px',
 				cursor: 'pointer',
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'center',
-				height: '43px',
 			}}
 			onClick={toggleTheme}
-		>
-			{theme == 'light' ? (
-				<FiSun
-					style={{
-						width: '26.875px',
-						height: '26.875px',
-					}}
-				/>
-			) : (
-				<FiMoon
-					style={{
-						width: '26.875px',
-						height: '26.875px',
-					}}
-				/>
-			)}
-		</div>
+		/>
+	) : (
+		<FiMoon
+			style={{
+				width: '26.875px',
+				height: '26.875px',
+				marginBottom: '-5.375px',
+				marginLeft: '5.375px',
+				cursor: 'pointer',
+			}}
+			onClick={toggleTheme}
+		/>
 	);
 }
