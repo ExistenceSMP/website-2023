@@ -23,6 +23,7 @@ export default function Footer() {
 					color: 'var(--fg)',
 					textAlign: 'center',
 					maxWidth: '600px',
+					lineHeight: '1rem',
 				}}
 			>
 				<strong style={{ fontWeight: 600 }}>
