@@ -14,6 +14,28 @@
 	--bg-secondary: #040d01;
 
 	--fg: #fff;
+
+	.sidebarLink {
+		&:hover,
+		&.active {
+			a {
+				color: var(--bg);
+			}
+		}
+
+		&:hover {
+			&:not(.active) {
+				a {
+					backdrop-filter: brightness(50%);
+				}
+			}
+			&.active {
+				a {
+					backdrop-filter: brightness(75%);
+				}
+			}
+		}
+	}
 }
 
 *,
@@ -131,17 +153,20 @@ a {
 	&:hover,
 	&.active {
 		background-color: var(--primary);
+		a {
+			color: var(--bg);
+		}
 	}
 
 	&:hover {
 		&:not(.active) {
 			a {
-				backdrop-filter: brightness(50%);
+				backdrop-filter: brightness(150%);
 			}
 		}
 		&.active {
 			a {
-				backdrop-filter: brightness(75%);
+				backdrop-filter: brightness(125%);
 			}
 		}
 	}
