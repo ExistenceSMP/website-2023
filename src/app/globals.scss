@@ -19,7 +19,7 @@
 		&:hover,
 		&.active {
 			a {
-				color: var(--bg);
+				color: var(--fg);
 			}
 		}
 
@@ -176,7 +176,7 @@ a {
 	margin-left: 2em;
 
 	transition: border 0.1s ease-in-out;
-	border-bottom: 2px solid var(--bg);
+	border-bottom: 2px solid transparent;
 
 	a {
 		font-size: 1.125rem;
@@ -337,4 +337,8 @@ p {
 		color: var(--primary);
 		text-decoration-thickness: 1px;
 	}
+}
+
+#howDidWeGetHere:hover {
+	cursor: pointer;
 }

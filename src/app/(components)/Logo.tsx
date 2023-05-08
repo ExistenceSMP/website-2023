@@ -8,7 +8,7 @@ export default function Logo() {
 				marginLeft: '0.5em',
 			}}
 		>
-			<img src="logos/cs2.svg" height="64px" />
+			<img src="/logos/cs2.svg" height="64px" />
 			<div
 				style={{
 					display: 'flex',
