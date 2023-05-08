@@ -60,6 +60,7 @@ export const metadata = {
 			'https://existencesmp.com/images/titles/existence-title-shadow-1920px-slim.png',
 		],
 	},
+	themeColor: '#22640E',
 };
 
 export default function RootLayout({
