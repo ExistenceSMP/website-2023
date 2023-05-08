@@ -23,9 +23,18 @@ export default function CommunityLayout({
 					lineHeight: '1.4em',
 					padding: '2em 2em',
 					alignSelf: 'start',
+					flexGrow: 1,
 				}}
 			>
-				<p style={{ fontSize: '1rem', marginBottom: '0.25em' }}>Navigation</p>
+				<p
+					style={{
+						marginTop: '-0.5em',
+						marginBottom: '0.25em',
+						fontVariant: 'small-caps',
+					}}
+				>
+					navigation
+				</p>
 				<ul style={{ listStyleType: 'none', gap: '0 1em' }}>
 					<SidebarLink
 						name={'Code of Conduct'}
@@ -33,16 +42,18 @@ export default function CommunityLayout({
 					/>
 					<SidebarLink name={'Community'} path={'/community'} />
 					<SidebarLink name={'Rules'} path={'/community/rules'} />
+					<SidebarLink name={'Server'} path={'/community/server'} />
 				</ul>
 			</div>
 			<div
 				style={{
-					flexGrow: 1,
 					backgroundColor: 'var(--bg)',
 					borderRadius: '0.5em',
 					lineHeight: '1.4em',
 					padding: '2em 2em',
+					width: 'calc((var(--page-width) / 8) * 5)',
 				}}
+				className="content"
 			>
 				{children}
 			</div>
