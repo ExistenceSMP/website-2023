@@ -50,7 +50,7 @@ export default function CommunityLayout({
 					backgroundColor: 'var(--bg)',
 					borderRadius: '0.5em',
 					lineHeight: '1.4em',
-					padding: '2em 2em',
+					padding: '1.5em 2em',
 					width: 'calc((var(--page-width) / 8) * 5)',
 				}}
 				className="content"
