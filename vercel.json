@@ -1,0 +1,44 @@
+{
+	"redirects": [
+		{
+			"source": "/discord",
+			"destination": "https://discordapp.com/invite/0149hOv271sOMiFJq"
+		},
+		{
+			"source": "/patreon",
+			"destination": "https://www.patreon.com/ExistenceSMP"
+		},
+		{
+			"source": "/youtube",
+			"destination": "https://www.youtube.com/ExistenceSMP"
+		},
+		{
+			"source": "/twitter",
+			"destination": "https://www.twitter.com/ExistenceSMP"
+		},
+		{
+			"source": "/websound",
+			"destination": "https://websound.co.uk/aff.php?aff=167"
+		},
+		{
+			"source": "/assets",
+			"destination": "https://drive.google.com/drive/folders/1nT8Fld-05oTQn82rNNBpmz2i8KMHtq5B"
+		},
+		{
+			"source": "/live",
+			"destination": "https://www.youtube.com/ExistenceSMP/live"
+		},
+		{
+			"source": "/map",
+			"destination": "https://map.existencesmp.com"
+		},
+		{
+			"source": "/2022",
+			"destination": "https://docs.google.com/document/d/1P_kkIIJqp6bxd48sPNGh2T0chKZAlt-CjwBORITmDoA/edit"
+		},
+		{
+			"source": "/2023",
+			"destination": "https://docs.google.com/document/d/e/2PACX-1vSEJIL7t6VFyEnunQd6rGHC6FQeXwuqWVRAlKKgS78as1fvR6cDkiIE9Mfmdp19vPyG2ruunjXPYvHD/pub"
+		}
+	]
+}
