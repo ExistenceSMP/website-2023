@@ -1,7 +1,13 @@
 'use client';
 
 import { IconType } from 'react-icons';
-import { SiYoutube, SiTwitter, SiDiscord, SiPatreon } from 'react-icons/si';
+import {
+	SiYoutube,
+	SiTwitter,
+	SiDiscord,
+	SiPatreon,
+	SiMastodon,
+} from 'react-icons/si';
 
 export default function SocialMedia() {
 	return (
@@ -22,6 +28,11 @@ export default function SocialMedia() {
 				color="#1D9BF0"
 				Icon={SiTwitter}
 				path="https://twitter.com/ExistenceSMP"
+			/>
+			<SocialMediaIcon
+				color="#6364ff"
+				Icon={SiMastodon}
+				path="https://farlands.cafe/@ExistenceSMP"
 			/>
 			<SocialMediaIcon
 				color="#5865F2"
@@ -64,7 +75,7 @@ function SocialMediaIcon({ color, Icon, path }: Props) {
 				}, 50)
 			}
 		>
-			<Icon style={{ width: '2em', height: '2em' }} />
+			<Icon style={{ width: '1.5em', height: '1.5em' }} />
 		</div>
 	);
 }

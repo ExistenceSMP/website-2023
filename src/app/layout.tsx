@@ -5,13 +5,14 @@ import './globals.scss';
 import { Providers } from './providers';
 
 export const metadata = {
-	title: 'Existence SMP',
+	title: 'Existence Community',
 	keywords: [
 		'Existence',
 		'SMP',
 		'Community',
 		'Minecraft',
 		'Existence SMP Community',
+		'Existence Community',
 		'Existence Minecraft server',
 		'Existence Server',
 		'mcpeachpies',
@@ -37,7 +38,7 @@ export const metadata = {
 			url: 'https://github.com/SugarCaney',
 		},
 	],
-	description: 'Official Website of the Existence SMP Minecraft Community',
+	description: 'Official Website of the Existence Community',
 	viewport: 'width=device-width, initial-scale=1',
 	icons: {
 		icon: '/favicon.png',
@@ -45,17 +46,17 @@ export const metadata = {
 	openGraph: {
 		type: 'website',
 		url: 'https://existencesmp.com',
-		title: 'Existence SMP',
-		siteName: 'Existence SMP',
-		description: 'Official Website of the Existence SMP Minecraft Community',
+		title: 'Existence Community',
+		siteName: 'Existence Community',
+		description: 'Official Website of the Existence Community',
 		images: [
 			'https://existencesmp.com/images/titles/existence-title-shadow-1920px-slim.png',
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Existence SMP Community',
-		description: 'Official Website of the Existence SMP Minecraft Community',
+		title: 'Existence Community',
+		description: 'Official Website of the Existence Community',
 		images: [
 			'https://existencesmp.com/images/titles/existence-title-shadow-1920px-slim.png',
 		],
