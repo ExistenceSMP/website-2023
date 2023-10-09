@@ -26,7 +26,7 @@ export default function Logo() {
 					}}
 					className={'logo-text'}
 				>
-					Existence SMP
+					Existence Community
 				</h1>
 			</div>
 		</div>

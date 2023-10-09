@@ -27,7 +27,7 @@ export default function Footer() {
 				}}
 			>
 				<strong style={{ fontWeight: 600 }}>
-					© {dayjs().year()} Existence SMP <ThemeSwitcher />
+					© {dayjs().year()} Existence Community <ThemeSwitcher />
 				</strong>
 				<br />
 				<br />
@@ -39,11 +39,11 @@ export default function Footer() {
 					"Minecraft" is a trademark of Mojang AB and any usage of the Minecraft
 					brand on this site is used in accordance with Mojang Studios'{' '}
 					<Link
-						href="https://www.minecraft.net/en-us/terms#terms-brand_guidelines"
+						href="https://www.minecraft.net/en-us/usage-guidelines"
 						target="_blank"
 						className="footerLink legal"
 					>
-						Brand and Asset Guidelines
+						Minecraft Usage Guidelines
 					</Link>
 					.
 					<br />
