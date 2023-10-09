@@ -50,6 +50,7 @@ export default function ScreenshotCarousel() {
 					)}`} // force cache refresh
 					fill={true}
 					alt={'Community Server 2'}
+					style={{ transform: 'scale(2)', overflow: 'hidden' }}
 				/>
 			</Carousel>
 		</div>
