@@ -96,13 +96,27 @@ interface Props {
 }
 
 function SocialMediaIcon({ icon, path, title, shiftHeld }: Props) {
-	const OLD_PATREON_PATH =
-		'M0 .48v23.04h4.22V.48zm15.385 0c-4.764 0-8.641 3.88-8.641 8.65 0 4.755 3.877 8.623 8.641 8.623 4.75 0 8.615-3.868 8.615-8.623C24 4.36 20.136.48 15.385.48z';
+	const COLOR_OVERRIDES: {
+		[keyof: string]: string;
+	} = {
+		Patreon: 'F1465A',
+	};
+
+	const SHIFT_PATH_OVERRIDES: {
+		[keyof: string]: string;
+	} = {
+		Patreon:
+			'M0 .48v23.04h4.22V.48zm15.385 0c-4.764 0-8.641 3.88-8.641 8.65 0 4.755 3.877 8.623 8.641 8.623 4.75 0 8.615-3.868 8.615-8.623C24 4.36 20.136.48 15.385.48z',
+	};
 
 	return (
 		<Link
 			style={{
-				backgroundColor: `#${icon.title != 'Patreon' ? icon.hex : 'F1465A'}`,
+				backgroundColor: `#${
+					Object.keys(COLOR_OVERRIDES).includes(icon.title)
+						? COLOR_OVERRIDES[icon.title]
+						: icon.hex
+				}`,
 			}}
 			className={'socialLink'}
 			target="_blank"
@@ -112,10 +126,8 @@ function SocialMediaIcon({ icon, path, title, shiftHeld }: Props) {
 			<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d={
-						icon.title != 'Patreon'
-							? icon.path
-							: shiftHeld
-							? OLD_PATREON_PATH
+						shiftHeld && Object.keys(SHIFT_PATH_OVERRIDES).includes(icon.title)
+							? SHIFT_PATH_OVERRIDES[icon.title]
 							: icon.path
 					}
 					fill="#ffffff"
