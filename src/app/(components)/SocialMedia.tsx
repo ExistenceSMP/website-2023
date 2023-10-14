@@ -1,14 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { IconType } from 'react-icons';
 import {
-	SiYoutube,
-	SiTwitter,
-	SiDiscord,
-	SiPatreon,
-	SiMastodon,
-} from 'react-icons/si';
+	SimpleIcon,
+	siYoutube,
+	siTwitter,
+	siDiscord,
+	siPatreon,
+	siMastodon,
+} from 'simple-icons';
 
 export default function SocialMedia() {
 	return (
@@ -33,32 +33,27 @@ export default function SocialMedia() {
 				}}
 			>
 				<SocialMediaIcon
-					color="#FF0000"
-					Icon={SiYoutube}
+					icon={siYoutube}
 					path="https://youtube.com/ExistenceSMP"
 					title="YouTube"
 				/>
 				<SocialMediaIcon
-					color="#1D9BF0"
-					Icon={SiTwitter}
+					icon={siTwitter}
 					path="https://twitter.com/ExistenceSMP"
 					title="Twitter"
 				/>
 				<SocialMediaIcon
-					color="#6364ff"
-					Icon={SiMastodon}
+					icon={siMastodon}
 					path="https://farlands.cafe/@ExistenceSMP"
 					title="Mastodon"
 				/>
 				<SocialMediaIcon
-					color="#5865F2"
-					Icon={SiDiscord}
+					icon={siDiscord}
 					path="https://existencesmp.com/discord"
 					title="Discord"
 				/>
 				<SocialMediaIcon
-					color="#F1465A"
-					Icon={SiPatreon}
+					icon={siPatreon}
 					path="https://patreon.com/ExistenceSMP"
 					title="Patreon"
 				/>
@@ -68,24 +63,25 @@ export default function SocialMedia() {
 }
 
 interface Props {
-	color: string;
-	Icon: IconType;
+	icon: SimpleIcon;
 	path: string;
 	title: string;
 }
 
-function SocialMediaIcon({ color, Icon, path, title }: Props) {
+function SocialMediaIcon({ icon, path, title }: Props) {
 	return (
 		<Link
 			style={{
-				backgroundColor: color,
+				backgroundColor: `#${icon.title != 'Patreon' ? icon.hex : 'F1465A'}`,
 			}}
 			className={'socialLink'}
 			target="_blank"
 			href={path}
 			title={title}
 		>
-			<Icon />
+			<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path d={icon.path} fill="#ffffff"></path>
+			</svg>
 		</Link>
 	);
 }

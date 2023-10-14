@@ -22,9 +22,10 @@
 		"nuka-carousel": "^5.5.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-icons": "^4.8.0",
+		"react-icons": "^4.11.0",
 		"remark-gfm": "^3.0.1",
 		"sass": "^1.59.3",
+		"simple-icons": "^9.17.0",
 		"typescript": "5.0.2"
 	},
 	"devDependencies": {
