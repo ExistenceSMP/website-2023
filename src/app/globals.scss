@@ -6,7 +6,7 @@
 
 	--primary: #22640e;
 
-	--page-width: min(90vw, 900px);
+	--page-width: min(90vw, 1000px);
 }
 
 [data-theme='dark'] {
@@ -102,7 +102,7 @@ nav {
 	}
 }
 
-@media (max-width: calc(800px + 6em)) {
+@media (max-width: 1000px) {
 	nav {
 		min-height: 128px;
 		flex-direction: column;
