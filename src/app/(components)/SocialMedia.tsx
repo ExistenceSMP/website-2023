@@ -1,16 +1,41 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import {
 	SimpleIcon,
 	siYoutube,
 	siTwitter,
+	siX,
 	siDiscord,
 	siPatreon,
 	siMastodon,
 } from 'simple-icons';
 
 export default function SocialMedia() {
+	const [shiftHeld, setShiftHeld] = useState(false);
+
+	function downHandler({ key }: { key: string }) {
+		if (key === 'Shift') {
+			setShiftHeld(true);
+		}
+	}
+
+	function upHandler({ key }: { key: string }) {
+		if (key === 'Shift') {
+			setShiftHeld(false);
+		}
+	}
+
+	useEffect(() => {
+		window.addEventListener('keydown', downHandler);
+		window.addEventListener('keyup', upHandler);
+		return () => {
+			window.removeEventListener('keydown', downHandler);
+			window.removeEventListener('keyup', upHandler);
+		};
+	}, []);
+
 	return (
 		<div>
 			<h2
@@ -38,7 +63,7 @@ export default function SocialMedia() {
 					title="YouTube"
 				/>
 				<SocialMediaIcon
-					icon={siTwitter}
+					icon={shiftHeld ? siX : siTwitter}
 					path="https://twitter.com/ExistenceSMP"
 					title="Twitter"
 				/>
