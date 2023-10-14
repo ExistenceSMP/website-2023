@@ -16,7 +16,9 @@ export default function NavLink({ name, path }: Props) {
 
 	return (
 		<li className={`navLink${active ? ' active' : ''}`}>
-			<Link href={path}>{name}</Link>
+			<Link href={path} title={name}>
+				{name}
+			</Link>
 		</li>
 	);
 }

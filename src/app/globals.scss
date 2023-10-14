@@ -359,3 +359,17 @@ p {
 #howDidWeGetHere:hover {
 	cursor: pointer;
 }
+
+.themeSwitcher {
+	width: 26.875px;
+	height: 26.875px;
+	cursor: pointer;
+	margin-left: 2em;
+
+	transition: filter 0.1s ease-in-out;
+	filter: contrast(25%);
+
+	&:hover {
+		filter: none;
+	}
+}

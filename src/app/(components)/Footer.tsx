@@ -28,7 +28,6 @@ export default function Footer() {
 			>
 				Copyright © 2023{year != 2023 ? ` — ${year}` : ''}{' '}
 				<strong style={{ fontWeight: 600 }}>Existence Community</strong>
-				<ThemeSwitcher />
 				<br />
 				<br />
 				<span>

@@ -17,11 +17,9 @@ export default function ThemeSwitcher() {
 		return (
 			<FiLoader
 				style={{
-					width: '26.875px',
-					height: '26.875px',
-					marginBottom: '-8px',
-					marginLeft: '5.375px',
+					cursor: 'not-allowed',
 				}}
+				className={'themeSwitcher'}
 			/>
 		);
 
@@ -34,26 +32,8 @@ export default function ThemeSwitcher() {
 	}
 
 	return theme == 'light' ? (
-		<FiSun
-			style={{
-				width: '26.875px',
-				height: '26.875px',
-				marginBottom: '-8px',
-				marginLeft: '5.375px',
-				cursor: 'pointer',
-			}}
-			onClick={toggleTheme}
-		/>
+		<FiSun className={'themeSwitcher'} onClick={toggleTheme} />
 	) : (
-		<FiMoon
-			style={{
-				width: '26.875px',
-				height: '26.875px',
-				marginBottom: '-8px',
-				marginLeft: '5.375px',
-				cursor: 'pointer',
-			}}
-			onClick={toggleTheme}
-		/>
+		<FiMoon className={'themeSwitcher'} onClick={toggleTheme} />
 	);
 }

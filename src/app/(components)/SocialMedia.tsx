@@ -36,26 +36,31 @@ export default function SocialMedia() {
 					color="#FF0000"
 					Icon={SiYoutube}
 					path="https://youtube.com/ExistenceSMP"
+					title="YouTube"
 				/>
 				<SocialMediaIcon
 					color="#1D9BF0"
 					Icon={SiTwitter}
 					path="https://twitter.com/ExistenceSMP"
+					title="Twitter"
 				/>
 				<SocialMediaIcon
 					color="#6364ff"
 					Icon={SiMastodon}
 					path="https://farlands.cafe/@ExistenceSMP"
+					title="Mastodon"
 				/>
 				<SocialMediaIcon
 					color="#5865F2"
 					Icon={SiDiscord}
 					path="https://existencesmp.com/discord"
+					title="Discord"
 				/>
 				<SocialMediaIcon
 					color="#F1465A"
 					Icon={SiPatreon}
 					path="https://patreon.com/ExistenceSMP"
+					title="Patreon"
 				/>
 			</div>
 		</div>
@@ -66,9 +71,10 @@ interface Props {
 	color: string;
 	Icon: IconType;
 	path: string;
+	title: string;
 }
 
-function SocialMediaIcon({ color, Icon, path }: Props) {
+function SocialMediaIcon({ color, Icon, path, title }: Props) {
 	return (
 		<Link
 			style={{
@@ -77,6 +83,7 @@ function SocialMediaIcon({ color, Icon, path }: Props) {
 			className={'socialLink'}
 			target="_blank"
 			href={path}
+			title={title}
 		>
 			<Icon />
 		</Link>
