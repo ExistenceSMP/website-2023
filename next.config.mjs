@@ -5,7 +5,6 @@ import remarkGfm from 'remark-gfm';
 const nextConfig = {
 	pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
 	experimental: {
-		appDir: true,
 		mdxRs: false,
 	},
 	images: {
