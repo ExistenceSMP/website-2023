@@ -58,7 +58,7 @@ html {
 	overflow-x: hidden;
 
 	scrollbar-width: thin;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 body {
@@ -208,12 +208,25 @@ a {
 }
 
 .socialLink {
+	flex-grow: 1;
+	aspect-ratio: 1 / 1;
+	border-radius: 0.5em;
+	padding: 1em;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	transition: transform 0.05s ease-in-out;
 	&:active {
 		transform: scale(0.95);
 	}
 	&:hover {
+		filter: brightness(1.1);
 		cursor: pointer;
+	}
+	svg {
+		width: 1.5em;
+		height: 1.5em;
 	}
 }
 
@@ -243,6 +256,7 @@ main,
 		text-decoration-color: transparent;
 
 		&:hover {
+			filter: brightness(1.1);
 			text-decoration-color: var(--primary);
 		}
 		color: var(--primary);
@@ -326,6 +340,7 @@ p {
 .footerLink {
 	font-weight: 600;
 	&:hover {
+		filter: brightness(1.1);
 		text-decoration: underline;
 		text-decoration-thickness: 2px;
 	}

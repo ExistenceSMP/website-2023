@@ -19,7 +19,7 @@ export default function ThemeSwitcher() {
 				style={{
 					width: '26.875px',
 					height: '26.875px',
-					marginBottom: '-5.375px',
+					marginBottom: '-8px',
 					marginLeft: '5.375px',
 				}}
 			/>
@@ -38,7 +38,7 @@ export default function ThemeSwitcher() {
 			style={{
 				width: '26.875px',
 				height: '26.875px',
-				marginBottom: '-5.375px',
+				marginBottom: '-8px',
 				marginLeft: '5.375px',
 				cursor: 'pointer',
 			}}
@@ -49,7 +49,7 @@ export default function ThemeSwitcher() {
 			style={{
 				width: '26.875px',
 				height: '26.875px',
-				marginBottom: '-5.375px',
+				marginBottom: '-8px',
 				marginLeft: '5.375px',
 				cursor: 'pointer',
 			}}

@@ -4,6 +4,8 @@ import Link from 'next/link';
 import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Footer() {
+	const year = dayjs().year();
+
 	return (
 		<div
 			style={{
@@ -11,7 +13,7 @@ export default function Footer() {
 				display: 'flex',
 				marginLeft: 'auto',
 				marginRight: 'auto',
-				marginBottom: '1.75em',
+				marginBottom: '1.5em',
 				justifyContent: 'center',
 				paddingTop: '1.5em',
 				position: 'relative',
@@ -19,23 +21,17 @@ export default function Footer() {
 		>
 			<p
 				style={{
-					fontSize: '1.125rem',
 					color: 'var(--fg)',
 					textAlign: 'center',
 					maxWidth: '600px',
-					lineHeight: '1rem',
 				}}
 			>
-				<strong style={{ fontWeight: 600 }}>
-					© {dayjs().year()} Existence Community <ThemeSwitcher />
-				</strong>
+				Copyright © 2023{year != 2023 ? ` — ${year}` : ''}{' '}
+				<strong style={{ fontWeight: 600 }}>Existence Community</strong>
+				<ThemeSwitcher />
 				<br />
 				<br />
-				<span
-					style={{
-						fontSize: '14px',
-					}}
-				>
+				<span>
 					"Minecraft" is a trademark of Mojang AB and any usage of the Minecraft
 					brand on this site is used in accordance with Mojang Studios'{' '}
 					<Link
@@ -50,26 +46,6 @@ export default function Footer() {
 					<br />
 					All logos used on this site are the property of their respective
 					owners.
-					<br />
-					<br />
-					<strong>
-						Website by{' '}
-						<Link
-							href="https://igalaxy.dev"
-							target="_blank"
-							className="footerLink igalaxy"
-						>
-							iGalaxy
-						</Link>{' '}
-						and{' '}
-						<Link
-							href="https://jipfr.nl"
-							target="_blank"
-							className="footerLink jip"
-						>
-							Jip Fr
-						</Link>
-					</strong>
 				</span>
 			</p>
 		</div>
