@@ -16,7 +16,7 @@ export default function YouTubeVideo({ id, style }: Props) {
 				width: 'calc((var(--page-width) / 5) * 3)',
 				height: 'calc(((var(--page-width) / 5) * 3)*(9/16))',
 				borderRadius: '0.5em',
-				backgroundColor: 'var(--bg)',
+				backgroundColor: 'var(--bg-loading)',
 				...style,
 			}}
 		/>

@@ -2,6 +2,8 @@
 	--bg: #fff;
 	--bg-secondary: #d8edd1;
 
+	--bg-loading: #ecf6e8;
+
 	--fg: #000;
 
 	--primary: #22640e;
@@ -12,6 +14,8 @@
 [data-theme='dark'] {
 	--bg: #0c2104;
 	--bg-secondary: #040d01;
+
+	--bg-loading: #081703;
 
 	--fg: #fff;
 
@@ -335,7 +339,7 @@ p {
 }
 .slider-frame {
 	border-radius: 0.5em;
-	background-color: var(--bg);
+	background-color: var(--bg-loading);
 }
 
 .footerLink {
