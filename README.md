@@ -1,3 +1,3 @@
 # 🌐 existencesmp.com
 
-The 2023 Existence SMP website
+The 2024 Existence SMP website
