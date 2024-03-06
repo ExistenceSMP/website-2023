@@ -15,19 +15,19 @@ import mila from "npm:markdown-it-link-attributes";
 import attrs from "npm:markdown-it-attrs";
 
 const site = lume(
-	{
-		src: "./site",
-		dest: "./public",
-		location: new URL("https://existencesmp.com"),
-	},
-	{
-		markdown: {
-			options: {
-				xhtmlOut: false,
-				typographer: true,
-			},
-		},
-	}
+  {
+    src: "./site",
+    dest: "./public",
+    location: new URL("https://existencesmp.com"),
+  },
+  {
+    markdown: {
+      options: {
+        xhtmlOut: false,
+        typographer: true,
+      },
+    },
+  },
 );
 
 site.copy("static");
@@ -40,19 +40,19 @@ site.use(nav());
 site.use(slugify_urls());
 
 const customizeMarkdown = (md: any) => {
-	md.use(mdAnchor, { level: 2 });
-	md.use(mdFootnote);
-	md.use(html5Media);
-	md.use(mdImageCaption);
-	md.use(mila, [
-		{
-			attrs: {
-				target: "_blank",
-				rel: "noopener",
-			},
-		},
-	]);
-	md.use(attrs);
+  md.use(mdAnchor, { level: 2 });
+  md.use(mdFootnote);
+  md.use(html5Media);
+  md.use(mdImageCaption);
+  md.use(mila, [
+    {
+      attrs: {
+        target: "_blank",
+        rel: "noopener",
+      },
+    },
+  ]);
+  md.use(attrs);
 };
 
 const md: any = await new Promise((r) => site.hooks.markdownIt(r));
