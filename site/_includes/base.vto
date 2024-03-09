@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+
+        <title>{{ it.title ? `${it.title} - Existence Community` : 'Existence Community' }}</title>
+
+        <link rel="stylesheet" href="/static/styles.css">
+
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    </head>
+    <body>
+        <nav id="navbar">
+            <a id="logo" title="Existence Community" href="/">
+                <img src="/assets/images/logos/cs2.svg" alt="Community Server 2" height="64px" width="64px">
+                <h1>
+                    Existence Community
+                </h1>
+            </a>
+        </nav>
+        {{ content }}
+        {{ comp.footer() }}
+    </body>
+</html>
